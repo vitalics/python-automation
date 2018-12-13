@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Launch All Tests",
+            "type": "python",
+            "request": "launch",
+            "args": [
+                "-m",
+                "behave",
+                "${workspaceFolder}"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+    ],
+    "compounds": []
+}

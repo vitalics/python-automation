@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "py",
+    "python.linting.pylintEnabled": true
+}
