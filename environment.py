@@ -1,11 +1,11 @@
 from selenium import webdriver
 
-from behave.runner import Context
+
+def before_feature(context, feature):
+    browser = webdriver.Chrome(
+        executable_path='./vendors/chromedriver.exe')
+    context.browser = browser
 
 
-def before_feature(context: Context, feature):
-    context.browser = webdriver.Chrome()
-
-
-def after_feature(context: Context, feature):
+def after_feature(context, feature):
     context.browser.quit()
